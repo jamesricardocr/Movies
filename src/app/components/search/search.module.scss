@@ -1,0 +1,28 @@
+.search {
+  form {
+    display: flex;
+    align-items: flex-end;
+    width: 90vw;
+    max-width: 375px;
+
+    @media (min-width: 1200px) { 
+      max-width: 250px;
+    }
+    div{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input,
+    button {
+      background-color: #1C1C1C;
+      height: 46px;
+      border: none;
+      color: white;
+      border-radius: 0;
+      padding-left: 10px;
+      outline: none;
+    }
+  }
+}

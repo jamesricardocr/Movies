@@ -1,0 +1,27 @@
+.aside {
+    padding: 20px 0;
+    background-color: #262626;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    position: sticky;
+    top: 110px;
+    z-index: 2;
+
+    @media (min-width: 768px) {
+        top: 90px;
+    }
+    @media (min-width: 1200px) {
+        top: 95px;
+        justify-content: flex-start;
+        padding: 50px 0;
+        flex: 1;
+        max-width: 300px;
+        min-width: 300px;
+        height: calc(100vh - 196px);
+    }
+}

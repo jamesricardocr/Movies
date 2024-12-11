@@ -1,0 +1,53 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    overflow: hidden;
+    h2 {
+        font-size: 24px;
+        margin-left: 4%;
+
+        @media (min-width: 1250px) {
+            margin-top: 39px;
+            margin-left: 0;
+
+        }
+    }
+
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        margin: auto;
+        justify-content: center;
+        row-gap: 20px;
+        @media (min-width: 430px) {
+            justify-content: flex-start;
+            gap: 2%;
+            row-gap: 10px;
+            
+        }
+        @media (min-width: 750px) {
+            margin-left: 4%;
+            gap: 7.3%;
+            row-gap: 20px;
+            justify-content: flex-start;
+        }
+        
+        @media (min-width: 820px) {
+            gap: 10%;
+            row-gap: 20px;
+        }
+
+        @media (min-width: 1024px) {
+            gap: 5%;
+            row-gap: 20px;
+        }
+
+        @media (min-width: 1250px) {
+            margin: 0;
+            gap: 2.5%;
+            row-gap: 10px;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.genreList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .select {
+        background-color: #1C1C1C;
+        height: 46px;
+        border: none;
+        color: white;
+        border-radius: 0;
+        width: 90vw;
+        max-width: 375px;
+        outline: none;
+        @media (min-width: 1200px) { 
+            max-width: 250px;
+          }
+    }
+}
