@@ -17,6 +17,7 @@ export default function Page() {
   const previousId = useRef<string | null>(null);
   const movies = useMovies();
   const id = searchParams.get('id');
+  
 
   useEffect(() => {
     const fetchFilteredMovies = () => {
