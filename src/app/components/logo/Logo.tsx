@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import style from './logo.module.scss'
 import logo from '@/app/assets/img/svg/Logo.svg'
+import user from '@/app/assets/img/svg/user.svg'
 import Link from 'next/link'
 import Image from 'next/image'
+import UserModal from '../userModal/UserModal'
 
 const Logo = () => {
+
+  const [showModal, setShowModal] = useState(false)
+
+  const handleUserModal = () => {
+    setShowModal(!showModal)
+  }
+
   return (
     <div className={style.logo}>
       <picture >
@@ -19,7 +28,9 @@ const Logo = () => {
           <li><Link href={'/generos/science-fiction?id=878'}>Popular</Link></li>
           <li><Link href={'/favoritos'}>Favoritos</Link></li>
         </ul>
+        <li onClick={() => handleUserModal()}><Image width={26} height={26} src={user.src} alt='user quickbet' /></li>
       </nav>
+      {showModal && <UserModal showModal={setShowModal} />}
     </div>
   )
 }

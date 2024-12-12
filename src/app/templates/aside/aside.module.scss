@@ -9,19 +9,19 @@
     gap: 10px;
     width: 100%;
     position: sticky;
-    top: 110px;
+    top: 140px;
     z-index: 2;
 
     @media (min-width: 768px) {
-        top: 90px;
+        top: 75px;
     }
     @media (min-width: 1200px) {
-        top: 95px;
+        top: 77px;
         justify-content: flex-start;
         padding: 50px 0;
         flex: 1;
         max-width: 300px;
         min-width: 300px;
-        height: calc(100vh - 196px);
+        height: calc(100vh - 178px);
     }
 }

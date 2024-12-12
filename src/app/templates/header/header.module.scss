@@ -1,14 +1,15 @@
 .header {
-    margin-top: 69px;
+    margin-top: 146px;
     flex-direction: column;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: top !important;
-    min-height: 430px;
+    min-height: 500px;
     height: auto;
     padding-bottom: 20px;
-
+    
     @media (min-width: 750px) {
+        margin-top: 69px;
         padding: 0;
         height: 430px;
     }

@@ -8,13 +8,13 @@
   text-align: center;
   display: flex;
   align-items: center;
-  height: 69px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
-  
+  z-index: 4;
+  box-sizing: border-box;
+
   @media (min-width: 750px) {
     padding: 13px 0;
     flex-direction: row;
@@ -36,7 +36,16 @@
     }
   }
 
+  li {
+    list-style: none;
+  }
+
   nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     @media (min-width: 750px) {
       margin-left: 42px;
     }
@@ -45,8 +54,10 @@
       display: flex;
       gap: 42px;
       padding: 0;
+
       li {
         list-style: none;
+        cursor: pointer;
 
         a {
           transition: all 500ms;
@@ -58,6 +69,7 @@
             color: #F0B90B;
           }
         }
+    
       }
     }
   }
