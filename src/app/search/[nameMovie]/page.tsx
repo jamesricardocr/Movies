@@ -18,7 +18,7 @@ export default function Page() {
             movies.setSearchMovies(fetchedMovies);
         }
         searchMovie()
-    }, [category, movies]);
+    }, [category]);
 
     return (
         <div className={styles.page}>
