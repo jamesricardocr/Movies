@@ -52,7 +52,7 @@ export default function Page() {
     };
 
     fetchFilteredMovies();
-  }, [id, movies.movies]);
+  }, [id, movies.movies, movies.gender]);
 
 
   return (

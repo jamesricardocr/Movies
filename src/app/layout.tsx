@@ -31,6 +31,11 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <title>Quickbet - Tu plataforma de películas</title>
+        <link rel="icon" href="/favicon.svg" />
+        <meta name="description" content="Descubre y busca tus películas favoritas con Quickbet." />
+      </head>
       <body className={style.main}>
         <MoviesProvider>
             <header>

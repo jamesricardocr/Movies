@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect} from 'react';
 import { useMovies } from "@/app/context/MoviesContex";
 import styles from "./page.module.scss";
 import MovieCard from "@/app/components/movieCard/MovieCard";
@@ -18,7 +18,7 @@ export default function Page() {
             movies.setSearchMovies(fetchedMovies);
         }
         searchMovie()
-    }, [category]);
+    }, [category, movies]);
 
     return (
         <div className={styles.page}>
